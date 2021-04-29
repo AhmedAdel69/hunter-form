@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>survey form</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1 id="title" class="text-center">hunter x hunter</h1>
+      <p id="dscription" class="description text-center">
+        thank you for join us
+      </p>
+    </header>
+    <form id="survey-form">
+      <!-- single item -->
+      <div class="form-group">
+        <label id="name-label" for="name"></label>
+        <p>name</p>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="from-control"
+          placeholder="enter your name"
+          required
+        />
+      </div>
+      <!-- end of single item -->
+
+      <!-- end of single item -->
+      <div class="form-group">
+        <label id="email-label" for="email"></label>
+        <p>email</p>
+        <input
+          type="email"
+          name="name"
+          id="name"
+          class="from-control"
+          placeholder="enter your Email"
+          required
+        />
+      </div>
+      <!-- end of single item -->
+
+      <!-- single item -->
+      <div class="form-group">
+        <label id="number-label" for="number">
+          age <span class="clue">(optional)</span></label
+        >
+        <input
+          placeholder="18"
+          type="number"
+          name="age"
+          id="age"
+          min="12"
+          max="90"
+        />
+      </div>
+      <!-- end of single item -->
+
+      <!-- single item -->
+      <div class="form-group">
+        <p class="title">witch type of hunter you want to be</p>
+        <select name="option" id="option">
+          <option value="" selected disabled>
+            select the role you want do
+          </option>
+          <option value="magical beasts hunter">magical beasts hunter</option>
+          <option value="Treasure hunter">Treasure hunter</option>
+          <option value="Crime Hunter">Crime Hunter</option>
+        </select>
+      </div>
+      <!-- end of single item -->
+
+      <!-- single item -->
+      <div class="form-group radio-group">
+        <p class="title">how many times you inroled in the hunter test</p>
+        <label class="label-radio">
+          <input
+            name="user-recommend"
+            value="definitely"
+            type="radio"
+            class="input-radio"
+            checked
+          />never</label
+        >
+        <label class="label-radio">
+          <input
+            name="user-recommend"
+            value="maybe"
+            type="radio"
+            class="input-radio"
+          />once</label
+        >
+
+        <label class="label-radio"
+          ><input
+            name="user-recommend"
+            value="not-sure"
+            type="radio"
+            class="input-radio"
+          />many</label
+        >
+      </div>
+      <!-- end of single item -->
+
+      <!-- single item -->
+      <div class="form-group">
+        <p>do you have any diseases</p>
+        <select name="medical" id="medical" class="form-control">
+          <option value="" selected disabled>
+            select the the option that fites you
+          </option>
+          <option value="yes">yes, i have</option>
+          <option value="no">no, i don't have</option>
+          <option value="dont know">i don't know</option>
+        </select>
+      </div>
+      <!-- end of single item -->
+
+      <!-- single item -->
+      <div class="form-group checkbox-group">
+        <p class="title">
+          what would you like to see improved
+          <span class="clue">(check all that apply)</span>
+        </p>
+
+        <label>
+          <input
+            type="checkbox"
+            name="rules"
+            id="rules"
+            class="checkbox"
+            value="rules"
+          />
+          changes in the rouls
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            name="supervisors"
+            id="supervisors"
+            value="supervisors"
+          />
+          new supervisors
+        </label>
+
+        <label>
+          <input type="checkbox" name="licens" id="licens" value="licens" />
+          changes in the hunter licens <br />
+        </label>
+      </div>
+      <!-- end of single item -->
+
+      <!-- single item -->
+      <div class="form-group">
+        <p class="title">any comment or suggestions?</p>
+        <textarea
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="5"
+          placeholder="enter your comment here"
+        ></textarea>
+      </div>
+      <!-- end of single item -->
+
+      <!-- single item -->
+      <div class="form-group">
+        <label for="submit-button">
+          <button class="btn" type="submit">submit</button>
+        </label>
+      </div>
+      <!-- end of single item -->
+    </form>
+  </body>
+</html>
